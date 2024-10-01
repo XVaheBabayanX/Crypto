@@ -1,30 +1,22 @@
-#include "Caesar.h"
+#include "SimpleSubstitution.h"
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 int main()
 {
-    int shift;
-    string OriginalText, EncryptedText, DecryptedText;
+    SimpleSubstitutionCipher cipher;
+    std::string OriginalText, EncryptedText, DecryptedText;
 
-    cout << "Input ASCII Shift : ";
-    cin >> shift;
-
-    CaesarCipher cipher(shift);
-
-    cout << "\nEnter original text : ";
-    cin.ignore();
-    getline(cin, OriginalText);
+    std::cout << "Enter original text: ";
+    std::getline(std::cin, OriginalText);
 
     cipher.Encrypt(OriginalText, EncryptedText);
     cipher.Decrypt(EncryptedText, DecryptedText);
 
-    cout << endl;
-    cout << "Original Text  : " << OriginalText << endl;
-    cout << "Encrypted Text : " << EncryptedText << endl;
-    cout << "Decrypted Text : " << DecryptedText << endl;
+    std::cout << std::endl;
+    std::cout << "Original Text  : " << OriginalText << std::endl;
+    std::cout << "Encrypted Text : " << EncryptedText << std::endl;
+    std::cout << "Decrypted Text : " << DecryptedText << std::endl;
 
     return 0;
 }
