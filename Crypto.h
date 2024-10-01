@@ -4,7 +4,8 @@
 
 class Crypto
 {
-private:
+public:
+	virtual ~Crypto() = default;
 	virtual int Encrypt();
 	virtual int Decrypt();
 };
