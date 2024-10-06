@@ -1,4 +1,4 @@
-#include "VigenereASCII.h"
+#include "Vigenere.h"
 #include <iostream>
 
 using namespace std;
