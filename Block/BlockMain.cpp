@@ -15,14 +15,14 @@ int main() {
 
 
     do{
-        std::cout << "Input key (leave empty for random key) length( 0 - " << PlainText.size() << " ) : ";
+        std::cout << "Input key (leave empty for random key) length( 1 - " << PlainText.size() << " ) : ";
         std::getline(std::cin, Key);
     } while (Key.size() > PlainText.size());
 
     if (Key.empty()) {
         while (KeyLength <= 0 || KeyLength > PlainText.size())
         {
-            std::cout << "Input Key length( 0 - " << PlainText.size() <<" ) : ";
+            std::cout << "Input Key length( 1 - " << PlainText.size() <<" ) : ";
             std::cin >> KeyLength;
         }
         Key = BlockCipher::GenerateRandomKey(KeyLength);
