@@ -1,6 +1,6 @@
 #pragma once
 
-#include <D:\\Visual Studio\\С++\\ProgSystemDefending\\CryptoClasses\\Crypto.h>
+#include "Crypto.h"
 #include <iostream>
 #include <vector>
 #include <string>
