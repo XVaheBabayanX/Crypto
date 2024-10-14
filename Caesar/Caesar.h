@@ -1,6 +1,6 @@
 ﻿#pragma 
 
-#include <D:\\Visual Studio\\С++\\ProgSystemDefending\\CryptoClasses\\Crypto.h>
+#include "Crypto.h"
 
 class CaesarCipher : public Crypto
 {
