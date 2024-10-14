@@ -2,7 +2,7 @@
 
 #include <string>
 #include <unordered_map>
-#include <D:\\Visual Studio\\С++\\ProgSystemDefending\\CryptoClasses\\Crypto.h>
+#include "Crypto.h"
 
 class Huffman : public Crypto {
 private:
