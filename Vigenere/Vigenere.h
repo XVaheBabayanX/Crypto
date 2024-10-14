@@ -2,7 +2,7 @@
 #include <string>
 #include <iostream>
 #include <cctype>
-#include <D:\\Visual Studio\\С++\\ProgSystemDefending\\CryptoClasses\\Crypto.h>
+#include "Crypto.h"
 
 class VigenereASCII : public Crypto
 {
