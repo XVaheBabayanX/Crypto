@@ -1,5 +1,5 @@
 ﻿#pragma once
-#include <D:\\Visual Studio\\С++\\ProgSystemDefending\\CryptoClasses\\Crypto.h>
+#include "Crypto.h"
 #include <vector>
 #include <string>
 
