@@ -81,7 +81,6 @@ std::string Transposition::CreateDecryptString(std::string& output)
 void Transposition::Encrypt(const std::string& input, std::string& output)
 {
 	CreateEncryptTable(input);
-	//PrintTable();
 	output = CreateEncryptString(output);
 	DeleteTable();
 }
@@ -89,7 +88,6 @@ void Transposition::Encrypt(const std::string& input, std::string& output)
 void Transposition::Decrypt(const std::string& input, std::string& output)
 {
 	CreateDecryptTable(input);
-	//PrintTable();
 	output = CreateDecryptString(output);
 	DeleteTable();
 }
